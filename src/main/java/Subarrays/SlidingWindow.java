@@ -13,8 +13,8 @@ public class SlidingWindow {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
             int sum = 0;
-            for (int j = i; j < n; i++) {
-                sum += arr[i];
+            for (int j = i; j < n; j++) {
+                sum += arr[j];
                 ans.add(sum);
             }
         }
