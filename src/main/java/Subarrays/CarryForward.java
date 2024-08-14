@@ -2,7 +2,7 @@ package Subarrays;
 
 import java.util.ArrayList;
 
-public class SlidingWindow {
+public class CarryForward {
     public static void main(String[] args) {
         int[] arr = {3, -2, 4, -1, 2, 6};
         System.out.println(printAllSubarraySum(arr));
