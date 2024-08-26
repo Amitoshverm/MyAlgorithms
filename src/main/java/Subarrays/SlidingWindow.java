@@ -8,15 +8,16 @@ public class SlidingWindow {
         System.out.println(contribution(arr1));
     }
     /*
-    * max subarray sum with lenght k
+    * max subarray sum with length
+    * sliding window can only perform only when window size is given
      */
     static int max(int [] arr, int k) {
         int sum = 0;
         int n = arr.length;
-        int max = Integer.MIN_VALUE;
         for (int i = 0; i < k; i++) {
             sum += arr[i];
         }
+        int max = sum;
 
         for (int i = 1; i < n-k; i++) {
             int j = i + k - 1;
